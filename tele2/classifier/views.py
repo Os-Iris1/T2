@@ -4,7 +4,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .services import ClassifierService
 from .mappers import ClassifierMapper
-from .dtos import ClassifierRequestDto
+from .dtos import ClassifierRequestDto, ClassifierResponseDto
 from .repository import ChurnDataRepository
 from .serializers import ChurnDataSerializer
 
