@@ -1,5 +1,6 @@
 import json
 from django.http import HttpRequest, JsonResponse
+from classifier.dtos import ClassifierResponseDto
 from .dtos import ClassifierRequestDto, ClassifierResponseDto
 
 class ClassifierMapper:

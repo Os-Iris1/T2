@@ -20,7 +20,7 @@ class ClassifierService:
             model_path = getattr(
                 settings, 
                 'ML_MODEL_PATH', 
-                os.path.join(settings.BASE_DIR, 'classifier', 'models', 'model.pkl')
+                os.path.join(settings.BASE_DIR, 'classifier', 'data', 'ml_models', 'model.pkl')
             )
             
             self._classifier = joblib.load(model_path)

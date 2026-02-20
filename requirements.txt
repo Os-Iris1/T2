@@ -2,3 +2,5 @@ Django
 joblib
 numpy
 scikit-learn
+djangorestframework
+psycopg2-binary

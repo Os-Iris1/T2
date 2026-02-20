@@ -38,11 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'classifier',  
 ]
 
 # Путь к ML модели
-ML_MODEL_PATH = os.path.join(BASE_DIR, 'classifier', 'models', 'model.pkl')
+ML_MODEL_PATH = os.path.join(BASE_DIR, 'classifier', 'data', 'ml_models', 'model.pkl')
 
 
 MIDDLEWARE = [
@@ -80,8 +81,12 @@ WSGI_APPLICATION = 'tele2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Tele2_Database',
+        'USER': 'postgres',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
