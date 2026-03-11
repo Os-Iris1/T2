@@ -1,6 +1,7 @@
-Django
-joblib
-numpy
-scikit-learn
-djangorestframework
-psycopg2-binary
+numpy>=2.4.2
+scikit-learn>=1.8.0
+Django>=5.2.11
+djangorestframework>=3.16.1
+django-cors-headers>=4.9.0
+psycopg2-binary>=2.9.11
+joblib>=1.5.3
